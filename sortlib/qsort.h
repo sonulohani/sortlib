@@ -9,7 +9,6 @@ Please read LICENSE file for license infomation.
 namespace sortlib {
 	template<typename SortType>
 		void qsort(typename SortType::container_type &value, Order order = Order::Ascending) {
-			SortType sortObject;
-			sortObject.sort(value, order);
+			SortType::sort(value, order);
 		}
 }

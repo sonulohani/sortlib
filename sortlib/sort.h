@@ -7,8 +7,9 @@ Author :- Sonu Lohani( sonulohani@gmail.com )
 #include "Order.h"
 
 namespace sortlib {
-	template<typename SortType>
-		void sort(typename SortType::container_type &value, Order order = Order::Ascending) {
-			SortType::sort(value, order);
-		}
+template <class SortType>
+void sort(typename SortType::container_type &value,
+          Order order = Order::Ascending) {
+  SortType::sort(value, order);
 }
+} // namespace sortlib

@@ -4,11 +4,13 @@ Author :- Sonu Lohani( sonulohani@gmail.com )
 */
 #pragma once
 
-#include <cstdint>
+#include "Common.h"
 
 namespace sortlib {
-	enum class Order : uint8_t {
-		Ascending,
-		Descending
+	template<typename Container>
+	struct SelectionSort : Sort<Container> {
+		void sort() {
+
+		}
 	};
 }
